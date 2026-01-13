@@ -19,7 +19,8 @@ Así, el número de configuraciones válidas de las aristas es $12! dot 2^11$
 *Paridad conjunta*.
 
 Solo la mitad de las parejas de permutaciones de esquinas y aristas cumplen la condición de
-tener la misma paridad, por lo que es necesario dividir entre 2.
+tener la misma paridad (@prop-restriccion-paridad), por lo que es necesario dividir entre 2 el número resultante.
+
 Combinando todos los factores, el número de combinaciones válidas del cubo de Rubik es:
 
 $

@@ -37,9 +37,9 @@ En esta sección se explica brevemente la teoría de grupos que se empleará a l
 
 #def(title: "Permutación")[
 
-Sea $Omega$ un conjunto, llamamos permutación a un aplicación biyectiva $f:Omega->Omega$.
-Al conjunto de permutaciones de $Omega$ lo denotamos por $S_Omega$ y forma un grupo con la operación
-$f dot.c g = g circle.tiny f$. 
+  Sea $Omega$ un conjunto, llamamos permutación a una aplicación biyectiva $f:Omega->Omega$.
+  Al conjunto de permutaciones de $Omega$ lo denotamos por $S_Omega$ y forma un grupo con la operación
+  $f dot.c g = g circle.tiny f$. 
 ]
 
 #def(title: "Acción")[
