@@ -13,44 +13,6 @@ $
   cal(R) = langle "U", "D", "L", "R", "F", "B" rangle <= S_Omega
 $
 
-Esto es un grupo con la operación $f dot g = g circle.tiny f$ para $f,g in cal(R)$. Sin embargo utilizaremos una notación distinta:
-
-$
-  f dot g = f " " g
-$
-
-Por ejemplo, $"U" dot "R" = "U R"$ y quiere decir que primero hacemos el movimiento $"U"$ y después $"R"$. Por tanto, todo elemento de $cal(R)$ se representa como una secuencia de los movimientos principales.
-
-
-
-- La asociatividad se cumple trivialmente.
-
-- El elemento neutro es la identidad o "secuencia vacía", es decir, ausencia de movimientos
-
-- El elemento inverso se obtiene invirtiendo el orden de la secuencia y cambiando cada movimiento por su inverso.
-
-El inverso de cada movimiento es el mismo pero en sentido contrario. $"X"$ y $"X'"$ son inversos y $"X2"$ es su propio inverso.
-
-#figure(caption: [Elementos Neutros e Inversos de las variantes de *$"R"$*])[
-  #grid(
-    columns: (1fr, 1fr, 1fr),
-    align: center,
-    stroke: 1pt,
-    inset: .5em,
-    block(breakable: false)[
-      #image("../assets/cubo_id.svg", width: 3cm)
-      #line(length: 100%)
-      *$1 " o  id"$*
-      #v(.25em)
-    ],
-    ..("R R'", "R2 R2").map(i => block(breakable: false)[
-      #image("../assets/cubo_"+i+".svg", width: 3cm)
-      #line(length: 100%)
-      *$#i$*
-      #v(.25em)
-    ])
-  )
-] <neutros-inversos-R>
 
 == Formalización Completa
 

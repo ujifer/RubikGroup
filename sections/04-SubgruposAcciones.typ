@@ -144,7 +144,3 @@ Se trata de una acción transitiva, pues solo tiene una órbita. Dados $H g_1, H
 El estabilizador de la clase $H 1 = H$ bajo esta acción es precisamente el subgrupo 
 
 $ "Stab"_cal(R) (H)={g in cal(R) | H prod g = H}=H $
-
-#aviso[
-  Podría poner el desarrollo para encontrar un subgrupo normal si me lo permite
-]

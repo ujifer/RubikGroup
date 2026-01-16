@@ -1,28 +1,16 @@
 #import "@local/math:1.0.0": *
 
-= Cálculo de todas las posibles configuraciones de un cubo de Rubik  <orden-grupo-cubo>
+= Cálculo del orden del grupo de Rubik  <orden-grupo-cubo>
 
-Una vez establecidas las restricciones estructurales, se puede calcular el número total de configuraciones distintas alcanzables del cubo de Rubik.
+Una vez establecidas las restricciones estructurales, se puede calcular el número total de configuraciones distintas alcanzables del cubo de Rubik, que coincide con el orden del grupo, $abs(cal(R))$, y el orden de $X$ con las restricciones:
 
-*Vértices*.
-- Existen 8! permutaciones posibles de las 8 esquinas.
-- Cada esquina tiene 3 orientaciones posibles, lo que supone $3^8$ combinaciones. Sin embargo, por la @prop-orientacion-vertices, solo una de cada tres combinaciones de orientaciones es válida.
+1. $abs(S_12)dot abs(S_8)=12! dot 8!$ pero solo una de cada dos $(pi,rho)in S_12 times S_8$ cumple la @prop-restriccion-paridad$imp 12! dot 8!"/"2$
 
-Por tanto, el número de configuraciones posibles de las esquinas es $8! dot 3^7$
+2. $abs((ZZ_3)^8)=3^8$ pero solo un tercio de los $arrow(v) in (ZZ_3)^8$ cumple la @prop-orientacion-vertices $imp 3^7$
 
-*Aristas*.
-- Existen $12!$ permutaciones posibles de las 12 aristas.
-- Cada arista tiene 2 orientaciones posibles, lo que da $2^12$ combinaciones. Por la @prop-orientacion-aristas, reduce este número a la mitad.
+3. $abs((ZZ_2)^12)=2^12$ pero solo un medio de los $arrow(w) in (ZZ_2)^12$ cumple la @prop-orientacion-aristas $imp 2^11$
 
-Así, el número de configuraciones válidas de las aristas es $12! dot 2^11$
-
-*Paridad conjunta*.
-
-Solo la mitad de las parejas de permutaciones de esquinas y aristas cumplen la condición de
-tener la misma paridad (@prop-restriccion-paridad), por lo que es necesario dividir entre 2 el número resultante.
-
-Combinando todos los factores, el número de combinaciones válidas del cubo de Rubik es:
-
+De este modo, multiplicando, obtenemos que el orden del grupo de Rubik es
 $
-  (8!dot 3^7 dot 12! dot 2^11)/2=43.252.003.274.489.856.000approx 4.3 dot 10^19
+  abs(X)=(8!dot 3^7 dot 12! dot 2^11)/2=43.252.003.274.489.856.000approx 4.3 dot 10^19
 $

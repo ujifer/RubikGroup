@@ -383,17 +383,21 @@ $
 == Cálculo $abs(X)=abs(Omega)$
 #slide[
   1. $abs(S_12)dot abs(S_8)=12! dot 8!$ pero solo una de cada dos $(pi,rho)in S_12 times S_8$ cumple $"sig"(pi)="sig"(rho) imp display((12! dot 8!)/2)$
+  #pause
 
   2. $abs((ZZ_3)^8)=3^8$ pero solo un tercio de los $arrow(v) in (ZZ_3)^8$ cumple $sum_(i=1)^8 v_i equiv 0 mod 3 imp 3^7$
 
+  #pause
   3. $abs((ZZ_2)^12)=2^12$ pero solo un medio de los $arrow(w) in (ZZ_2)^12$ cumple $sum_(i=1)^8 w_i equiv 0 mod 2 imp 2^11$
 
+  #pause
   $
     abs(X)=(8!dot 3^7 dot 12! dot 2^11)/2=43.252.003.274.489.856.000approx 4.3 dot 10^19
   $
 ]
 
 = Bibliografía
+
 #block()[#set text(size: 0pt)
 @conrad15puzzle
 @navarro2016
